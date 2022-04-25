@@ -114,3 +114,13 @@ ping -c1 www.google.com
 ```
 
 이 구성은 특히 마이크로서비스 개발자에게 유용합니다. 오케스트레이션 플랫폼은 호스트 이름을 동적으로 생성할 수 있으므로 `/etc/hosts` 파일에 대해 다시 걱정할 필요가 없습니다.
+
+### Mac DNS 캐시 제거
+
+간혹 Mac에 resolver로 설정한 DNS가 적용되지 않을때 DNS서버가 캐시되어서 그렇다.
+
+```
+sudo killall -HUP mDNSResponder
+```
+
+위 명령어로 캐시를 제거할 수 있다.
