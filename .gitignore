@@ -1,0 +1,4 @@
+.env
+config/traefik/acme
+config/traefik/certs
+config/traefik/users
