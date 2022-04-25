@@ -1,4 +1,14 @@
 tls:
   certificates:
-    - certFile: "/etc/certs/local-cert.pem"
-      keyFile: "/etc/certs/local-key.pem"
+    - certFile: "/etc/certs/imlocal.me.pem"
+      keyFile: "/etc/certs/imlocal-me-key.pem"
+      stores:
+        - imlocal
+    - certFile: "/etc/certs/imtest.me.pem"
+      keyFile: "/etc/certs/imtest.me-key.pem"
+      stores:
+        - imtest
+    - certFile: "/etc/certs/lan-cert.pem"
+      keyFile: "/etc/certs/lan-key.pem"
+      stores:
+        - default

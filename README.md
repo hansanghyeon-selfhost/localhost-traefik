@@ -120,7 +120,7 @@ ping -c1 www.google.com
 간혹 Mac에 resolver로 설정한 DNS가 적용되지 않을때 DNS서버가 캐시되어서 그렇다.
 
 ```
-sudo killall -HUP mDNSResponder
+sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder
 ```
 
 위 명령어로 캐시를 제거할 수 있다.
